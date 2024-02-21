@@ -19,7 +19,10 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false})) 
 
 
+app.get('/',(req,res)=>{
+    res.send('Hola desde la página de inicio')
 
+})
 
 app.get('/inicio',(req,res)=>{
     res.render('inicio')
